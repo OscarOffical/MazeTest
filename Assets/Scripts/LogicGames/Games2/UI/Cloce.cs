@@ -9,4 +9,6 @@ public class Cloce : MonoBehaviour
     {
        WhoClose.SetActive(_whoOpen);
     }
+
+   
 }

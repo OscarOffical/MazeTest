@@ -1,11 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Zenject;
 
 public class WinZoneTrigger : MonoBehaviour
 {
+    [SerializeField] NextLeaval _nextLeaval;
+    private ClipMusic _clipMusic;
     private Winer _winer;
+
+    private void Awake()
+    {
+        if (_nextLeaval == null) 
+        { 
+            _nextLeaval = GetComponent<NextLeaval>();
+        }
+
+        if(_clipMusic == null)
+        {
+            _clipMusic = GetComponent<ClipMusic>();
+        }
+
+    }
 
     [Inject]
     public void Constuct(Winer Win)
@@ -16,10 +33,16 @@ public class WinZoneTrigger : MonoBehaviour
     {
         if(other != null)
         {
-            if (other.CompareTag("Player"))
+            if (other.gameObject.GetComponent<InputeControler>())
             {
                 _winer.YouWin();
+                _clipMusic.PlayClip();
+                _nextLeaval.NextLeavals();
+               
+
             }
         }
     }
+
+    
 }

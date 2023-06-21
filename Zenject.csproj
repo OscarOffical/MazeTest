@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{667B8C92-DB9F-FBD9-E786-976742C78952}</ProjectGuid>
+    <ProjectGuid>{3ECA0867-A6DC-353A-74D6-71D8EC25E22C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Zenject</AssemblyName>

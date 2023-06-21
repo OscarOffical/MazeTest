@@ -7,9 +7,9 @@ public class DeadZone : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other != null)
+        if(other ??= null)
         {
-            if (other.CompareTag("Player"))
+            if (other.gameObject.GetComponent<InputeControler>())
             {
                 GlobalEventSystem.SignatureGameOver();
             }

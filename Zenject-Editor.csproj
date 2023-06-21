@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8E8438E2-6305-1C3D-8AF3-9F291D585C52}</ProjectGuid>
+    <ProjectGuid>{60661042-9951-D290-D2C1-3AFE62673E0F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Zenject-Editor</AssemblyName>
@@ -768,7 +768,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Zenject.csproj">
-      <Project>{667B8C92-DB9F-FBD9-E786-976742C78952}</Project>
+      <Project>{3ECA0867-A6DC-353A-74D6-71D8EC25E22C}</Project>
       <Name>Zenject</Name>
     </ProjectReference>
   </ItemGroup>

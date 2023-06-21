@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9A57B9D6-8312-66D7-7201-B6490810BD01}</ProjectGuid>
+    <ProjectGuid>{33AB929A-BA6E-5072-8D01-E24FF6882025}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Zenject-ReflectionBaking-Editor</AssemblyName>
@@ -767,11 +767,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Zenject.csproj">
-      <Project>{667B8C92-DB9F-FBD9-E786-976742C78952}</Project>
+      <Project>{3ECA0867-A6DC-353A-74D6-71D8EC25E22C}</Project>
       <Name>Zenject</Name>
     </ProjectReference>
     <ProjectReference Include="Zenject-Editor.csproj">
-      <Project>{8E8438E2-6305-1C3D-8AF3-9F291D585C52}</Project>
+      <Project>{60661042-9951-D290-D2C1-3AFE62673E0F}</Project>
       <Name>Zenject-Editor</Name>
     </ProjectReference>
   </ItemGroup>

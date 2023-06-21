@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8114AD54-2913-092E-FA80-C80CEA2819FC}</ProjectGuid>
+    <ProjectGuid>{B711C875-DC99-9115-CF0C-311C53883ABD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Zenject-TestFramework</AssemblyName>
@@ -718,7 +718,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Zenject.csproj">
-      <Project>{667B8C92-DB9F-FBD9-E786-976742C78952}</Project>
+      <Project>{3ECA0867-A6DC-353A-74D6-71D8EC25E22C}</Project>
       <Name>Zenject</Name>
     </ProjectReference>
   </ItemGroup>

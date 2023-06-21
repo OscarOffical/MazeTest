@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 using Zenject;
 
@@ -9,6 +8,7 @@ public class UntitledInstaller : MonoInstaller
     [SerializeField] private ProzressSystem _progressSystem;
     [SerializeField] private Winer _winer;
     [SerializeField] private InputeControler _inputeControler;
+    [SerializeField] private Pause _pause;
     
     
     public override void InstallBindings()
@@ -18,6 +18,7 @@ public class UntitledInstaller : MonoInstaller
         BingGold();
         BindWin();
         BindInputeControler();
+        BindPause();
 
 
 
@@ -67,6 +68,14 @@ public class UntitledInstaller : MonoInstaller
         Container
             .Bind<InputeControler>()
             .FromInstance(_inputeControler)
+            .AsSingle()
+            .NonLazy();
+    }
+    public void BindPause()
+    {
+        Container
+            .Bind<Pause>()
+            .FromInstance(_pause)
             .AsSingle()
             .NonLazy();
     }

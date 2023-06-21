@@ -6,7 +6,6 @@ public class Pause : MonoBehaviour
     [SerializeField] public InputeControler _inputeControler;
     private IComand ConcretCommand;
 
-
     [Inject]
     public void Sinstract(InputeControler inputeControler)
     {
@@ -24,7 +23,6 @@ public class Pause : MonoBehaviour
 
     public void Play()
     {
-        var play = new ConcreteCommand(_inputeControler);
-        play.Undo();
+       ConcretCommand.Undo();
     }
 }
