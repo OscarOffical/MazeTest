@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _training: {fileID: 185928122}
-  _progressTrining: 0
+  _progressTrining: 2
 --- !u!114 &185928122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2697,8 +2697,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movingLogic: {fileID: 0}
-  _speed: 1
-  _rigidbody: {fileID: 0}
 --- !u!114 &765415051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2832,6 +2830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3268fab184e02b940bb27e4451fc8ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
   _audioClip: {fileID: 8300000, guid: 35a0edf9913f99340a4c469d9c3030cc, type: 3}
 --- !u!1 &815032150
 GameObject:
@@ -3337,7 +3336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4103a240311687943ac2fcef6998a489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _menuLose: {fileID: 0}
+  _menuLose: {fileID: 561683670}
   _pause: {fileID: 1079408812}
 --- !u!4 &954162139 stripped
 Transform:
@@ -3688,7 +3687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a238f1a15eec334499f48d21e1486061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputeControler: {fileID: 765415050}
+  _inputeController: {fileID: 0}
 --- !u!1001 &1081217694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5220,6 +5219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3268fab184e02b940bb27e4451fc8ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
   _audioClip: {fileID: 8300000, guid: adc161a73522d5544b71afe09a63d07d, type: 3}
 --- !u!82 &1498981370
 AudioSource:
@@ -7545,7 +7545,7 @@ MonoBehaviour:
   _gameOver: {fileID: 1949338870}
   _progressSystem: {fileID: 1969007587}
   _winer: {fileID: 1777238766}
-  _inputeControler: {fileID: 765415050}
+  _inputeController: {fileID: 765415050}
   _pause: {fileID: 1079408812}
 --- !u!114 &1975661537
 MonoBehaviour:

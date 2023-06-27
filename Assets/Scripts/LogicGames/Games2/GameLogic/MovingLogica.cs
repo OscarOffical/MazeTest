@@ -5,13 +5,17 @@ public class MovingLogica : MonoBehaviour
     [SerializeField] private float PlayerPositionX;
     [SerializeField] private float PlayerPositionZ;
     private Rigidbody _rigidbody;
-    private int _speed = 10;
+    
 
     public void Start()
     {
+        if(_rigidbody == null)
+        {
+            _rigidbody = GetComponent<Rigidbody>();
+        }
         PlayerPositionX = transform.position.x;
         PlayerPositionZ = transform.position.z;
-        _rigidbody= GetComponent<Rigidbody>();
+        
     }
     
 

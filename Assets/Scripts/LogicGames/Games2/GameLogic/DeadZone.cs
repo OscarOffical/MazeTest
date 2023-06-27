@@ -1,7 +1,4 @@
- using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Zenject;
 
 public class DeadZone : MonoBehaviour
 {
@@ -9,7 +6,7 @@ public class DeadZone : MonoBehaviour
     {
         if(other ??= null)
         {
-            if (other.gameObject.GetComponent<InputeControler>())
+            if (other.gameObject.GetComponent<InputeController>())
             {
                 GlobalEventSystem.SignatureGameOver();
             }

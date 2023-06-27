@@ -14,8 +14,14 @@ public class ProzressSystem : MonoBehaviour
 
     void Start()
     {
+        if(_gold <= 0)
+        {
+            _gold = 0;
+        }
+
         _goldText = transform.GetChild(0).GetComponent<TMP_Text>();
         _goldText.text = _gold.ToString();
+
     }
 
     public void Gold()

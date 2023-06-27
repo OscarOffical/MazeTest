@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Zenject;
 
 public class WinZoneTrigger : MonoBehaviour
@@ -9,6 +6,12 @@ public class WinZoneTrigger : MonoBehaviour
     [SerializeField] NextLeaval _nextLeaval;
     private ClipMusic _clipMusic;
     private Winer _winer;
+
+    [Inject]
+    public void Constuct(Winer Win)
+    {
+        _winer = Win;
+    }
 
     private void Awake()
     {
@@ -24,16 +27,11 @@ public class WinZoneTrigger : MonoBehaviour
 
     }
 
-    [Inject]
-    public void Constuct(Winer Win)
-    {
-        _winer = Win;
-    }
     private void OnTriggerEnter(Collider other)
     {
         if(other != null)
         {
-            if (other.gameObject.GetComponent<InputeControler>())
+            if (other.gameObject.GetComponent<InputeController>())
             {
                 _winer.YouWin();
                 _clipMusic.PlayClip();

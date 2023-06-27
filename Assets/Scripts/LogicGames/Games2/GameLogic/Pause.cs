@@ -3,17 +3,17 @@ using Zenject;
 
 public class Pause : MonoBehaviour
 {
-    [SerializeField] public InputeControler _inputeControler;
+    [SerializeField] private InputeController _inputeController;
     private IComand ConcretCommand;
 
     [Inject]
-    public void Sinstract(InputeControler inputeControler)
+    public void Sinstract(InputeController inputeController)
     {
-        _inputeControler = inputeControler;
+        _inputeController = inputeController;
     }
     private void Awake()
     {
-        ConcretCommand = new ConcreteCommand(_inputeControler);
+        ConcretCommand = new ConcreteCommand(_inputeController);
     }
     public void GamePause()
     {

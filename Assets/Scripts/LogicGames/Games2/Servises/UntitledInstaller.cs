@@ -7,7 +7,7 @@ public class UntitledInstaller : MonoInstaller
     [SerializeField] private GameOver _gameOver;
     [SerializeField] private ProzressSystem _progressSystem;
     [SerializeField] private Winer _winer;
-    [SerializeField] private InputeControler _inputeControler;
+    [SerializeField] private InputeController _inputeController;
     [SerializeField] private Pause _pause;
     
     
@@ -66,8 +66,8 @@ public class UntitledInstaller : MonoInstaller
     public void BindInputeControler()
     {
         Container
-            .Bind<InputeControler>()
-            .FromInstance(_inputeControler)
+            .Bind<InputeController>()
+            .FromInstance(_inputeController)
             .AsSingle()
             .NonLazy();
     }

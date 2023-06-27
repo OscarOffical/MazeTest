@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\MenuCommand.cs" />
+    <Compile Include="Assets\Scripts\LogicGames\Games2\UI\ClipMusic.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\Training.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\UI\ContinueGame.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\Servises\IComand.cs" />
@@ -68,26 +69,28 @@
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\GameOver.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\ConcterTraining.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\UI\ButtonExit.cs" />
+    <Compile Include="Assets\Scripts\LogicGames\Games2\UI\PercentVolume.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\UI\ButtonLodings.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\Winer.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\NextLeaval.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\WinZoneTrigger.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\MovingLogica.cs" />
+    <Compile Include="Assets\Scripts\LogicGames\Games2\UI\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\LeavalManager.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\Gold.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\UI\Menu.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\Servises\UntitledInstaller.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\ObrabotchicTrining.cs" />
+    <Compile Include="Assets\Scripts\LogicGames\Games2\UI\SettingVolume.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\Servises\MenuHandler.cs" />
-    <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\InputeControler.cs" />
+    <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\InputeController.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\UI\ProzressSystem.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\UI\StepsVisuaUll.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\UI\AbstractMenu.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\Servises\GlobalEventSystem.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\ConcreteCommand.cs" />
     <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\Leaval.cs" />
-    <Compile Include="Assets\Scripts\LogicGames\Games2\UI\MusicPlayer.cs" />
-    <Compile Include="Assets\Scripts\LogicGames\Games2\UI\ClipMusic.cs" />
+    <Compile Include="Assets\Scripts\LogicGames\Games2\GameLogic\VolumeTransfer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

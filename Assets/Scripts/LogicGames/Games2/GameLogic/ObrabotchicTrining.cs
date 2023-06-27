@@ -12,6 +12,15 @@ public class ObrabotchicTrining : MonoBehaviour
     {
         _pause= pause;
     }
+
+    private void Awake()
+    {
+        if (_progressTrining != 0)
+        {
+            _progressTrining = 0;
+        }
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -22,6 +31,7 @@ public class ObrabotchicTrining : MonoBehaviour
 
 
     }
+
     public void OpitetionTraining()
     {
         _pause.GamePause();

@@ -1,20 +1,20 @@
  
 public class ConcreteCommand : IComand
 {
-    private InputeControler _inputeControler;
+    private InputeController _inputeController;
 
-    public ConcreteCommand(InputeControler inputeControler)
+    public ConcreteCommand(InputeController inputeController)
     {
-        _inputeControler = inputeControler;
+        _inputeController = inputeController;
     }
 
     public void Execute()
     {
-        _inputeControler.enabled = false;
+        _inputeController.enabled = false;
     }
 
     public  void Undo()
     {
-        _inputeControler.enabled = true;
+        _inputeController.enabled = true;
     }
 }
